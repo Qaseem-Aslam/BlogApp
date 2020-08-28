@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+	<div class="d-flex flex-column">
+		<p class="m-auto">The action requires authentication.</p>
+		<p>
+			<a href="{% url 'register' %}">Register</a> or
+			<a href="{% url 'login' %}">Login</a>
+		</p>
+	</div>
+
+</div>
+
+{% endblock content %}
